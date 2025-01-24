@@ -108,9 +108,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.paragraph-text{
-
+.fs-7{
+    font-size: 12px !important;
 }
+@media (max-width:768px){
+    .fs-7{
+        font-size: 15px !important;
+    }
+}
+
 .home-get-demo-btn{
     border-radius: 50px;
     display: flex;
@@ -146,7 +152,6 @@
     transition: transform 0.3s ease;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
 }
 .feature-container:hover {
     transform: translateY(-2px);
@@ -166,7 +171,7 @@
     transition: transform 0.3s ease;
     background: white;
     border-radius: 5px;
-    box-shadow: 4px 4px 6px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 220px 62px 0px rgba(59, 59, 59, 0.00), 0px 141px 56px 0px rgba(59, 59, 59, 0.01), 0px 79px 48px 0px rgba(59, 59, 59, 0.03), 0px 35px 35px 0px rgba(59, 59, 59, 0.05), 0px 9px 19px 0px rgba(59, 59, 59, 0.06);
 }
 
 .app-detail-container>p{
@@ -191,8 +196,27 @@
         text-align: left;
     }
 }
+
+.mar-l{
+    margin-left: 2px;
+}
+@media (min-width: 768px) {
+    .mar-l{
+        margin-left: 8px;
+    }
+}
+
 .footer-text{
     width: 80px;
+    font-size: 16px !important;
+    margin-left: 3px;
+}
+@media (min-width: 768px) {
+    .footer-text{
+        width: 70px;
+        font-size: 14px !important;
+        margin-left: 3px;
+    }
 }
 .diagonalArrowRightUpIcon {
     width: 24px;

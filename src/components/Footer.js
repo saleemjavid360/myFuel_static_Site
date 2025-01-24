@@ -5,17 +5,17 @@ import diagonalArrow from "../assets/images/diagonal-arrow-right-up.svg";
 const Footer = () => {
   return (
     <div className="col-12 d-flex flex-column align-items-center">
-      <footer className="col-11 py-5 p-2 ">
-        <div className="d-flex flex-column flex-md-row p-1">
+      <footer className="col-11 py-5 p-1 px-0 pb-0">
+        <div className="d-flex flex-column flex-md-row p-0">
           <div className='col-12 col-md-5 mb-4 col-md-2'>
             <img
               src={myFuelLogoDesktop}
               alt="MyFuelAi"
-              width={130}
+              width={100}
             />
             <div className='col-12 d-sm-none d-md-block mt-md-4'>
-              <p className='text-dark'>Subscribe to get the latest insights </p>
-              <div className='d-flex'>
+              <p className='text-dark fs-7'>Subscribe to get the latest insights </p>
+              <div className='d-flex col-10'>
                 <input
                   id="newsletter1"
                   type="text"
@@ -29,35 +29,35 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-12 col-md-2 mb-3 ">
-            <h5 className='text-muted'>Company</h5>
+          <div className="col-12 col-md-2 mb-3">
+            <h5 className='text-muted fs-6 mb-2'>Company</h5>
             <ul className="nav flex-column gap-2">
-              <li className="nav-item mb-2">
+              <li className="nav-item mb-2 fs-7">
                 <a href="#" className="nav-link p-0 text-dark mx-1">
                   Solutions
                 </a>
               </li>
-              <li className="nav-item mb-2">
+              <li className="nav-item mb-2 fs-7">
                 <a href="#" className="nav-link p-0 text-dark mx-1">
                   App
                 </a>
               </li>
-              <li className="nav-item mb-2">
+              <li className="nav-item mb-2 fs-7">
                 <a href="#" className="nav-link p-0 text-dark mx-1">
                   Platform
                 </a>
               </li>
-              <li className="nav-item mb-2">
+              <li className="nav-item mb-2 fs-7">
                 <a href="#" className="nav-link p-0 text-dark mx-1">
                   About Us
                 </a>
               </li>
-              <li className="nav-item mb-2">
+              <li className="nav-item mb-2 fs-7">
                 <a href="#" className="nav-link p-0 text-dark mx-1">
                   Pricing
                 </a>
               </li>
-              <li className="nav-item mb-2">
+              <li className="nav-item mb-2 fs-7">
                 <a href="#" className="nav-link p-0 text-dark mx-1">
                   Contact Us
                 </a>
@@ -66,10 +66,10 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-md-2 mb-3 ">
-            <h5 className='text-muted'>Social networks</h5>
+            <h5 className='text-muted fs-6'>Social networks</h5>
             <ul className="col-12 nav flex-column gap-2">
               <li className="d-flex nav-item mb-2 ">
-                <a href="#" className="nav-link p-0 text-dark footer-text ">
+                <a href="#" className="p-0 text-dark footer-text">
                   Facebook
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -77,7 +77,7 @@ const Footer = () => {
                 </svg>
               </li>
               <li className="d-flex nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-dark footer-text ">
+                <a href="#" className=" p-0 text-dark footer-text ">
                   Linkdin
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -85,7 +85,7 @@ const Footer = () => {
                 </svg>
               </li>
               <li className="d-flex nav-item mb-2 ">
-                <a href="#" className="nav-link p-0 text-dark footer-text ">
+                <a href="#" className="p-0 text-dark footer-text ">
                   Twitter
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -96,10 +96,10 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-md-2 mb-3 ">
-            <h5 className='text-muted mb-3'>Contact Us</h5>
-            <ul className="col-12 nav flex-column gap-2">
+            <h5 className='text-muted mb-3 fs-6 mx-md-2'>Contact Us</h5>
+            <ul className="col-12 nav flex-column">
               <li className="d-flex nav-item mb-2  gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <svg className='mar-l' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clipPath="url(#clip0_11865_21863)">
                     <path d="M12 13.2715C13.6569 13.2715 15 11.9283 15 10.2715C15 8.61463 13.6569 7.27148 12 7.27148C10.3431 7.27148 9 8.61463 9 10.2715C9 11.9283 10.3431 13.2715 12 13.2715Z" stroke="#6245D8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M19.5 10.2715C19.5 17.0215 12 22.2715 12 22.2715C12 22.2715 4.5 17.0215 4.5 10.2715C4.5 8.28236 5.29018 6.37471 6.6967 4.96818C8.10322 3.56166 10.0109 2.77148 12 2.77148C13.9891 2.77148 15.8968 3.56166 17.3033 4.96818C18.7098 6.37471 19.5 8.28236 19.5 10.2715Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -110,12 +110,12 @@ const Footer = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <a href="#" className="nav-link p-0 text-dark">
+                <a href="#" className="nav-link p-0 text-dark fs-7">
                   1234 Fuel St, Logistics City, USA
                 </a>
               </li>
               <li className="d-flex nav-item mb-2 gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <svg className='mar-l' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clipPath="url(#clip0_11865_21869)">
                     <path d="M14.25 5.02148C15.5114 5.35366 16.6621 6.01469 17.5844 6.93705C18.5068 7.85942 19.1678 9.01007 19.5 10.2715" stroke="#6245D8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M13.5 8.02148C15.0488 8.43586 16.0856 9.47273 16.5 11.0215" stroke="#6245D8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -127,12 +127,12 @@ const Footer = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <a href="#" className="nav-link p-0 text-dark">
+                <a href="#" className="nav-link p-0 text-dark fs-7">
                   +1 (555) 123-4567
                 </a>
               </li>
               <li className="d-flex nav-item mb-2 gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <svg className='mar-l' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clipPath="url(#clip0_11865_21876)">
                     <path d="M9 14.7715H5.25" stroke="#6245D8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M21.75 17.0215V11.3965C21.75 10.1036 21.2364 8.86358 20.3221 7.94934C19.4079 7.0351 18.1679 6.52148 16.875 6.52148H7.125C8.41793 6.52148 9.65791 7.0351 10.5721 7.94934C11.4864 8.86358 12 10.1036 12 11.3965V17.7715H21C21.1989 17.7715 21.3897 17.6925 21.5303 17.5518C21.671 17.4112 21.75 17.2204 21.75 17.0215Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -145,7 +145,7 @@ const Footer = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <a href="#" className="nav-link p-0 text-dark">
+                <a href="#" className="nav-link p-0 text-dark fs-7">
                   support@myfuel.ai
                 </a>
               </li>
@@ -170,13 +170,13 @@ const Footer = () => {
 
         </div>
 
-        <div className="d-flex flex-column flex-md-row justify-content-md-between py-4 p-2">
-          <p className='text-muted'>2019 - 2024 ©</p>
+        <div className="d-flex flex-column flex-md-row justify-content-md-between py-4 p-2 pb-1">
+          <p className='text-muted fs-7'>2019 - 2024 ©</p>
           <ul className="list-unstyled d-flex">
-            <li className="text-muted">
+            <li className="text-muted fs-7">
               <p>Terms of Service</p>
             </li>
-            <li className="mx-3 text-muted">
+            <li className="mx-3 text-muted fs-7">
               <p>Privacy Policy</p>
             </li>
           </ul>

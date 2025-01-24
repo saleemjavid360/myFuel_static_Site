@@ -111,10 +111,11 @@ const Home = () => {
         </div>
         <div className="col-12 col-md-6 d-flex flex-column justify-content-cente align-items-center">
           <video
-            // controls
             autoPlay
             width="100%"
             height="240"
+            muted
+            loop 
             // className="w-100 h-100"
             // style={{ objectFit: "cover" }}
           >
@@ -169,7 +170,7 @@ const Home = () => {
           <div className="row justify-content-center">
             <div className="col-12 d-flex flex-wrap justify-content-center">
               <div className="col-12 col-md-6 col-lg-3 p-3 ">
-                <div className="d-flex flex-column gap-2 p-3 h-100 border rounded feature-container">
+                <div className="d-flex flex-column gap-2 p-3 h-100  rounded feature-container">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="36"
@@ -201,7 +202,7 @@ const Home = () => {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 p-3">
-                <div className="d-flex flex-column gap-2 p-3 h-100 border rounded feature-container">
+                <div className="d-flex flex-column gap-2 p-3 h-100 rounded feature-container">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="36"
@@ -235,7 +236,7 @@ const Home = () => {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 p-3">
-                <div className="d-flex flex-column gap-2 p-3 h-100 border rounded feature-container">
+                <div className="d-flex flex-column gap-2 p-3 h-100 rounded feature-container">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="36"
@@ -267,7 +268,7 @@ const Home = () => {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 p-3">
-                <div className="d-flex flex-column gap-2 p-3 h-100 border rounded feature-container">
+                <div className="d-flex flex-column gap-2 p-3 h-100 rounded feature-container">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="36"
@@ -570,9 +571,9 @@ const Home = () => {
 
                 <div className="col-12 col-md-4 p-1 ">
                   <div className="d-flex flex-column align-items-center gap-0 p-3 h-100  rounded basic-price-container">
-                    <p className="">ENTERPRISE</p>
-                    <h3 className="">Custom Pricing</h3>
-                    <div className="col-12 d-flex flex-column justify-content-center p-2 pb-0 pt-0">
+                    <p className="fw-normal lh-1 text-dark">ENTERPRISE</p>
+                    <h3 className="fw-bold fs-4 lh-1">Custom Pricing</h3>
+                    <div className="col-12 d-flex flex-column justify-content-center p-2 pb-0 pt-0 mt-2">
                       {customPricingPerks.map((apptext) => (
                         <div className="d-flex center gap-2" key={apptext.id}>
                           <div>
@@ -653,17 +654,19 @@ const Home = () => {
       </div>
 
       {/* Try-Demo-Section */}
-      <div className="d-flex flex-column justify-content-center align-items-center myfuel-default-bg-color rounded p-3">
-        <h1 className="text-white text-center">
-          Ready to Optimize Your Fuel Logistics?
-        </h1>
-        <p className="text-white text-center">
-          Get started with MyFuel.ai and experience seamless fuel logistics with
-          real-time tracking and AI-driven optimization
-        </p>
-        <button type="button" className="custom-btn btn-default-text-color custom-btn-border-color bg-white">
-          Try for Free
-        </button>
+      <div className=" rounded myfuel-default-bg-color">
+        <div className="d-flex flex-column justify-content-center align-items-center p-3 my-5 mx-5">
+          <h1 className="text-white text-center heavy-title">
+            Ready to Optimize Your Fuel Logistics?
+          </h1>
+          <p className="fw-normal fs-7 text-white text-center">
+            Get started with MyFuel.ai and experience seamless fuel logistics with
+            real-time tracking and AI-driven optimization
+          </p>
+          <button type="button" className="custom-btn btn-default-text-color custom-btn-border-color bg-white">
+            Try for Free
+          </button>
+        </div>
       </div>
     </div>
   );
