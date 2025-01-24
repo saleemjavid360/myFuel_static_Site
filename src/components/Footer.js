@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <div className="col-12 d-flex flex-column align-items-center">
       <footer className="col-11 py-5 p-1 px-0 pb-0">
-        <div className="d-flex flex-column flex-md-row p-0">
-          <div className='col-12 col-md-5 mb-4 col-md-2'>
+        <div className="d-flex flex-row flex-sm-row p-0 flex-wrap">
+          <div className='col-12 col-sm-3 col-md-5 mb-4 col-md-2'>
             <img
               src={myFuelLogoDesktop}
               alt="MyFuelAi"
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-12 col-md-2 mb-3">
+          <div className="col-4 col-sm-3 col-md-2 mb-3">
             <h5 className='text-muted fs-6 mb-2'>Company</h5>
             <ul className="nav flex-column gap-2">
               <li className="nav-item mb-2 fs-7">
@@ -65,7 +65,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-12 col-md-2 mb-3 ">
+          <div className="col-4 col-sm-3 col-md-2 mb-3 ">
             <h5 className='text-muted fs-6'>Social networks</h5>
             <ul className="col-12 nav flex-column gap-2">
               <li className="d-flex nav-item mb-2 ">
@@ -95,7 +95,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-12 col-md-2 mb-3 ">
+          <div className="col-4 col-sm-3 col-md-2 mb-3 ">
             <h5 className='text-muted mb-3 fs-6 mx-md-2'>Contact Us</h5>
             <ul className="col-12 nav flex-column">
               <li className="d-flex nav-item mb-2  gap-2">
@@ -153,7 +153,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='col-12 col-md-2 d-sm-block d-md-none'>
+          <div className='col-12 col-md-2 d-sm-block d-md-none '>
             <p className='text-dark'>Subscribe to get the latest insights </p>
             <div className='d-flex'>
               <input

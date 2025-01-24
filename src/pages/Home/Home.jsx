@@ -8,7 +8,7 @@ import signaturePharmacy from "../../assets/images/signaturePharmacy.png";
 import lopic from "../../assets/images/lopic.png";
 import appMapImage from "../../assets/images/appMapImage.png";
 import adminTerminal from "../../assets/images/adminTerminal.png";
-import plus from "../../assets/images/plus.svg";
+
 const appfeatureTexts = [
   { id: 1, text: "User-Friendly Interface" },
   { id: 2, text: "Real-Time Updates" },
