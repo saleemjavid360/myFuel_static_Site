@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import myFuelLogoMobile from "../assets/images/myFuelLogo-mobile.png";
 import myFuelLogoDesktop from "../assets/images/myFuelLogo-desktop.png";
 
 const Navbar = () => {
   const [isMenuToggle, setIsMenuToggle] = useState(false);
-  const navigate = useNavigate();
   const handleMenuClick = (e) => {
-    console.log(e);
     setIsMenuToggle(!isMenuToggle);
   };
   const items = [
@@ -15,49 +13,37 @@ const Navbar = () => {
       id: 1,
       label: "Solutions",
       icon: null,
-      command: () => {
-        navigate("/");
-      },
+      navigateTo:"/solutions",
     },
     {
       id: 2,
       label: "App",
       icon: null,
-      command: () => {
-        navigate("/");
-      },
+      navigateTo:"/app",
     },
     {
       id: 3,
       label: "Platform",
+      navigateTo:"/platform",
       icon: null,
-      command: () => {
-        navigate("/");
-      },
     },
     {
       id: 4,
       label: "About Us",
       icon: null,
-      command: () => {
-        navigate("/");
-      },
+      navigateTo:"/aboutus",
     },
     {
       id: 5,
       label: "Pricing",
       icon: null,
-      command: () => {
-        navigate("/");
-      },
+      navigateTo:"/pricing",
     },
     {
       id: 6,
       label: "Contact Us",
       icon: null,
-      command: () => {
-        navigate("/");
-      },
+      navigateTo:"/contactus",
     },
   ];
   return (
@@ -90,17 +76,17 @@ const Navbar = () => {
                   Get a demo
                 </button>
                 <button
-                  className="navbar-toggler border-0"
+                  className="navbar-toggler border-0 outline-none navbar-toggler-btn"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                   onClick={handleMenuClick}
                 >
                   {isMenuToggle ? (
-                    <span aria-hidden="true">&times;</span>
+                    <span className="fs-2" aria-hidden="true">&times;</span>
                   ) : (
                     <span
                       className={`navbar-toggler-icon ${
@@ -117,7 +103,7 @@ const Navbar = () => {
                 {items.map((item, indx) => {
                   return (
                     <div className="nav-item active mx-2" key={item.id}>
-                      <Link className="nav-link navbar-links" to="/">
+                      <Link className="nav-link navbar-links" to={item.navigateTo}>
                         {item.label}
                       </Link>
                     </div>
@@ -146,23 +132,20 @@ const Navbar = () => {
         </nav>
       </div>
       {/* links-mobile-view */}
-      <div
-        className={`collapse navbar-collapse d-sm-blcok d-md-none ${
-          isMenuToggle ? "show" : ""
-        }`}
-        id="navbarSupportedContent"
-      >
+      <div className="d-sm-block d-md-none">
+       <div className="collapse navbar-collapse overlay" id="navbarSupportedContent">
         <ul className="d-flex flex-column align-items-center navbar-nav">
           {items.map((item, indx) => {
             return (
               <li className="nav-item active" key={item.id}>
-                <Link className="nav-link navbar-links" to="/">
+                <Link className="nav-link navbar-links" to={item.navigateTo}>
                   {item.label}
                 </Link>
               </li>
             );
           })}
         </ul>
+      </div>
       </div>
     </React.Fragment>
   );
