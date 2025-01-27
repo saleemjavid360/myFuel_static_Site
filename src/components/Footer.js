@@ -1,6 +1,7 @@
 import React from 'react'
 import myFuelLogoDesktop from "../assets/images/myFuelLogo-desktop.png";
 import diagonalArrow from "../assets/images/diagonal-arrow-right-up.svg";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -174,10 +175,14 @@ const Footer = () => {
           <p className='text-muted fs-7'>2019 - 2024 ©</p>
           <ul className="list-unstyled d-flex">
             <li className="text-muted fs-7">
-              <p>Terms of Service</p>
+              <Link className="nav-link navbar-links" to={"/termsAndConditions"}>
+                <p>Terms of Service</p>
+              </Link>
             </li>
             <li className="mx-3 text-muted fs-7">
+            <Link className="nav-link navbar-links" to={"/privacyPolicy"}>
               <p>Privacy Policy</p>
+            </Link>
             </li>
           </ul>
         </div>

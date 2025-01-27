@@ -9,6 +9,8 @@ const Platform = lazy(() => import("./pages/platform/Platform.jsx"));
 const NotFound = lazy(() => import("./pages/notFound/NotFound.js")); 
 const AppRoute = lazy(() => import("./pages/appRoute/AppRoute.jsx")); 
 const ContactUs = lazy(() => import("./pages/contactUs/ContactUs.jsx")); 
+const TermsAndConditions = lazy(() => import("./pages/termsAndConditions/TermsAndConditions.jsx")); 
+const PrivacyPolicy = lazy(() => import("./pages/privacyPolicy/PrivacyPolicy.jsx")); 
 
 const SuspenseWrapper = ({ children }) => {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="platform" element={<Platform />} /> 
           <Route path="app" element={<AppRoute />} /> 
           <Route path="contactus" element={<ContactUs />} /> 
+          <Route path="termsAndConditions" element={<TermsAndConditions />} /> 
+          <Route path="privacyPolicy" element={<PrivacyPolicy />} /> 
           <Route path="*" element={<SuspenseWrapper><NotFound /></SuspenseWrapper>} />
         </Route>
       </Routes>
