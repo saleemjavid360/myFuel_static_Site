@@ -320,3 +320,51 @@
 .accordion-button:not(.collapsed)::after{
     background-image: url("../images//close.svg") !important;
 }
+
+/* contact Us Section */
+
+
+
+.form-control {
+    background:transparent !important;
+    border: none;
+    color: white !important;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400 !important;
+    outline: none !important;
+    border-radius: 0.50rem !important;
+    font-size: 13px !important;
+}
+
+.form-control::placeholder {
+    color: white !important;
+}
+
+.form-control:focus {
+    background:  transparent !important;
+    color: white;
+    box-shadow: none !important;
+    border: 1px solid white !important;
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: none;
+}
+
+.btn-submit {
+    background: white;
+    color: #6610f2;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
