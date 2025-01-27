@@ -1,9 +1,10 @@
-import React, { useState, } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import myFuelLogoMobile from "../assets/images/myFuelLogo-mobile.png";
 import myFuelLogoDesktop from "../assets/images/myFuelLogo-desktop.png";
 
 const Navbar = () => {
+  const location = useLocation()
   const [isMenuToggle, setIsMenuToggle] = useState(false);
   const handleMenuClick = (e) => {
     setIsMenuToggle(!isMenuToggle);
@@ -46,6 +47,7 @@ const Navbar = () => {
       navigateTo:"/contactus",
     },
   ];
+
   return (
     <React.Fragment>
       <div className="d-flex flex-column align-items-center bg-light border-bottom">
@@ -101,9 +103,10 @@ const Navbar = () => {
             <div className="d-flex justify-content-center align-items-center d-none d-md-block">
               <div className="d-flex">
                 {items.map((item, indx) => {
+                  const isActive = location.pathname === item.navigateTo;
                   return (
-                    <div className="nav-item active mx-2" key={item.id}>
-                      <Link className="nav-link navbar-links" to={item.navigateTo}>
+                    <div className="nav-item mx-2" key={item.id}>
+                      <Link className={`nav-link navbar-links ${isActive ? "active-link" : ""}`} to={item.navigateTo}>
                         {item.label}
                       </Link>
                     </div>
@@ -136,9 +139,13 @@ const Navbar = () => {
        <div className="collapse navbar-collapse overlay" id="navbarSupportedContent">
         <ul className="d-flex flex-column align-items-center navbar-nav">
           {items.map((item, indx) => {
+            const isActive = location.pathname === item.navigateTo;
             return (
               <li className="nav-item active" key={item.id}>
-                <Link className="nav-link navbar-links" to={item.navigateTo}>
+                <Link 
+                  className={`nav-link navbar-links ${isActive ? "active-link" : ""}`}
+                  to={item.navigateTo}
+                >
                   {item.label}
                 </Link>
               </li>
