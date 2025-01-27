@@ -26,6 +26,17 @@
 
 }
 
+.nav-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-link.active-link {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid var(--myfuel-default-color);
+  }
+
 .overlay {
     position: absolute;
     right: 0;
@@ -215,7 +226,7 @@
 
 .app-detail-container>p{
     text-align: center;
-    color: #000;
+    color: #4B4B4B;
     font-size: 16px;
 }
 @media (min-width: 767px) {
@@ -225,7 +236,7 @@
 }
 .app-detail-container>h1{
     text-align: center;
-    color: #000;
+    color: #000000;
     font-size: 25px;
     font-style: normal;
     font-weight: 800;
