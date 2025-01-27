@@ -7,6 +7,8 @@ const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const AboutUs = lazy(() => import("./pages/aboutUs/AboutUs"));
 const Platform = lazy(() => import("./pages/platform/Platform.jsx"));
 const NotFound = lazy(() => import("./pages/notFound/NotFound.js")); 
+const AppRoute = lazy(() => import("./pages/appRoute/AppRoute.jsx")); 
+const ContactUs = lazy(() => import("./pages/contactUs/ContactUs.jsx")); 
 
 const SuspenseWrapper = ({ children }) => {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route index element={<Home />} /> 
           <Route path="aboutus" element={<AboutUs />} /> 
           <Route path="platform" element={<Platform />} /> 
+          <Route path="app" element={<AppRoute />} /> 
+          <Route path="contactus" element={<ContactUs />} /> 
           <Route path="*" element={<SuspenseWrapper><NotFound /></SuspenseWrapper>} />
         </Route>
       </Routes>

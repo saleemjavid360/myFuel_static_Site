@@ -1,88 +1,86 @@
 import React from "react";
-import RouteAndResourseOptimization from "../../assets/images/RouteAndResourseOptimization.png";
-import bestBuyModule from "../../assets/images/bestBuyModule.png";
-import inventoryMonitorModule from "../../assets/images/inventoryMonitorModule.png";
-import priceLetter from "../../assets/images/priceLetter.png";
-import adminTerminal from "../../assets/images/adminTerminal.png";
+import appMapImage from "../../assets/images/appMapImage.png";
 import momentoLogo from "../../assets/images/momentoLogo.png";
 import signatureRX from "../../assets/images/signatureRX.png";
 import lifeData1 from "../../assets/images/lifedata1.png";
 import lifeData2 from "../../assets/images/lifedata2.png";
 import signaturePharmacy from "../../assets/images/signaturePharmacy.png";
 import lopic from "../../assets/images/lopic.png";
+import artOfScanning from "../../assets/images/artOfScanning.png";
+import IotIntegration from "../../assets/images/IotIntegration.png";
+
 
 const basicPricePerks = [
-  { id: 1, text: "Dispatch (Load and Orders)" },
-  { id: 2, text: "Mobile App (Loads, Orders, Pictures)" },
-  { id: 3, text: "Live Tracking" },
-  { id: 4, text: "48 hour support turn around" },
-];
-const proPerks = [
-  { id: 1, text: "Dispatch (Load and Orders)" },
-  { id: 2, text: "Mobile App (Loads, Orders, Pictures)" },
-  { id: 3, text: "Live Tracking" },
-  { id: 4, text: "BOL and Ticket digitization (Spring 2025)" },
-  { id: 5, text: "Reconciliation (Spring 2025)" },
-  { id: 6, text: "Bestbuy (Spring 2025)" },
-  { id: 7, text: "Truck and Driver Optimization (Spring 2025)" },
-  { id: 8, text: "Integrations with external systems (Inbound and Outbound)" },
-  { id: 9, text: "Truck Insights and Replay Route" },
-  { id: 10, text: "LCR Register Integration" },
-  { id: 11, text: "24 hour support turn around" },
-];
-const customPricingPerks = [
-  { id: 1, text: "Private Hosting" },
-  { id: 2, text: "Private Hosting" },
-];
-
-const qaList = [
-  {
-    id: 1,
-    collapseText: "collapseOne",
-    question: "What is MyFuel.ai and how does it work?",
-    answer:
-      "MyFuel.ai is a digital platform for managing fuel transportation, combining a mobile app for drivers and a web platform for administrators to ensure smooth operations.",
-  },
-  {
-    id: 2,
-    collapseText: "collapseTwo",
-    question: "How can I get started with MyFuel.ai?",
-    answer: "",
-  },
-  {
-    id: 3,
-    collapseText: "collapseThree",
-    question: "What kind of support do you offer?",
-    answer: "",
-  },
-  {
-    id: 4,
-    collapseText: "collapseFour",
-    question: "How can I get started with MyFuel.ai?",
-    answer: "",
-  },
-  {
-    id: 5,
-    collapseText: "collapseFive",
-    question: "What kind of support do you offer?",
-    answer: "",
-  },
-];
-
-const Platform = () => {
+    { id: 1, text: "Dispatch (Load and Orders)" },
+    { id: 2, text: "Mobile App (Loads, Orders, Pictures)" },
+    { id: 3, text: "Live Tracking" },
+    { id: 4, text: "48 hour support turn around" },
+  ];
+  const proPerks = [
+    { id: 1, text: "Dispatch (Load and Orders)" },
+    { id: 2, text: "Mobile App (Loads, Orders, Pictures)" },
+    { id: 3, text: "Live Tracking" },
+    { id: 4, text: "BOL and Ticket digitization (Spring 2025)" },
+    { id: 5, text: "Reconciliation (Spring 2025)" },
+    { id: 6, text: "Bestbuy (Spring 2025)" },
+    { id: 7, text: "Truck and Driver Optimization (Spring 2025)" },
+    { id: 8, text: "Integrations with external systems (Inbound and Outbound)" },
+    { id: 9, text: "Truck Insights and Replay Route" },
+    { id: 10, text: "LCR Register Integration" },
+    { id: 11, text: "24 hour support turn around" },
+  ];
+  const customPricingPerks = [
+    { id: 1, text: "Private Hosting" },
+    { id: 2, text: "Private Hosting" },
+  ];
+  
+  const qaList = [
+    {
+      id: 1,
+      collapseText: "collapseOne",
+      question: "What is MyFuel.ai and how does it work?",
+      answer:
+        "MyFuel.ai is a digital platform for managing fuel transportation, combining a mobile app for drivers and a web platform for administrators to ensure smooth operations.",
+    },
+    {
+      id: 2,
+      collapseText: "collapseTwo",
+      question: "How can I get started with MyFuel.ai?",
+      answer: "",
+    },
+    {
+      id: 3,
+      collapseText: "collapseThree",
+      question: "What kind of support do you offer?",
+      answer: "",
+    },
+    {
+      id: 4,
+      collapseText: "collapseFour",
+      question: "How can I get started with MyFuel.ai?",
+      answer: "",
+    },
+    {
+      id: 5,
+      collapseText: "collapseFive",
+      question: "What kind of support do you offer?",
+      answer: "",
+    },
+  ];
+const AppRoute = () => {
   return (
     <div className="col-11 d-flex flex-column home-desc-container p-0 gap-3 bg-light">
       {/* Main-section */}
       <div className="col-12 d-flex flex-column flex-md-row mt-3 p-2">
         <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start mt-3">
           <h1 className="main-title">
-            Streamline <br />
-            Your operations
+            Fuel managment <br />
+            made simple
           </h1>
           <p className="custom-paragraph text-md-left text-dark">
-            Optimize logistics and fuel management with our AI-powered platform
-            – real-time insights, advanced analytics, and seamless integration
-            for maximum efficiency.
+            Stay in control of your fleet with our intuitive app – track fuel
+            usage, manage deliveries, and access critical documents anytime,
+            anywhere
           </p>
           <div className="col-11 d-flex flex-column flex-md-row mt-3 gap-1">
             <button
@@ -100,7 +98,7 @@ const Platform = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 d-flex flex-column justify-content-cente align-items-center">
-          <img className="p-1 w-100" src={adminTerminal} alt="MyFuelAi" />
+          <img className="p-1" src={appMapImage} alt="MyFuelAi" />
         </div>
       </div>
 
@@ -135,30 +133,26 @@ const Platform = () => {
         </div>
       </div>
 
-      {/* Route And Resource Optimization */}
+      {/* State-of-art-Section */}
       <div className="col-12 my-4">
         <div className="row justify-content-center">
           <div className="col-12 col-md-6 d-flex justify-content-center">
-            <div className="d-flex flex-column align-items-center  align-items-md-start gap-3 p-2 ">
-              <button
-                type="button"
-                className="sm-custom-btn btn-default-text-color custom-btn-border-color"
-              >
-                SMART ROUTES
-              </button>
+            <div className="d-flex flex-column align-items-center  align-items-md-start gap-3 p-2">
               <div className="app-detail-container">
-                <h1>Route and Resource Optimization</h1>
+                <h1>State-of-the-Art Mobile Scanning</h1>
                 <p>
-                  Revolutionize your fleet operations with myFuel's cutting-edge
-                  AI algorithms. Our intelligent system optimizes truck and
-                  resource allocation, crafting efficient routes tailored to
-                  your specific needs.
+                  Streamline your operations with myFuel's advanced mobile
+                  scanning technology. Our AI-powered live extraction automates
+                  data capture, reducing manual input by 80% and minimizing
+                  errors. By quickly and accurately collecting essential data,
+                  you'll accelerate load and order completion times.
                 </p>
                 <p>
-                  Empower your dispatchers with data-driven insights and
-                  multiple route options, ensuring maximum efficiency and
-                  cost-effectiveness. Experience the future of transportation
-                  logistics with myFuel.
+                  With top-notch proof of delivery documentation generated
+                  effortlessly, you can expedite your accounts receivable
+                  process and improve cash flow. Experience t he future of
+                  transportation logistics with myFuel's innovative mobile
+                  scanning solution
                 </p>
               </div>
               <button
@@ -169,39 +163,30 @@ const Platform = () => {
               </button>
             </div>
           </div>
-          <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center ">
-            <img
-              className="p-1 w-100"
-              src={RouteAndResourseOptimization}
-              alt="MyFuelAi"
-            />
+          <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+            <img className="p-1 w-100" src={artOfScanning} alt="MyFuelAi" />
           </div>
         </div>
       </div>
 
-      {/* BestModule-Section */}
+      {/* Iot-Integration-Section */}
       <div className="col-12 my-4">
         <div className="row justify-content-center">
           <div className="col-12 col-md-6 d-flex justify-content-center order-md-2">
-            <div className="d-flex flex-column align-items-center  align-items-md-start gap-3 p-2 ">
-              <button
-                type="button"
-                className="sm-custom-btn btn-default-text-color custom-btn-border-color"
-              >
-                SAVE FUEL
-              </button>
+            <div className="d-flex flex-column align-items-center  align-items-md-start gap-3 p-2">
               <div className="app-detail-container">
-                <h1>BestBuy Module</h1>
+                <h1>IoT Integration</h1>
                 <p>
-                  Maximize your profits wit h myFuel's Best Buy module. Our
-                  AI-powered system analyzes real-time fuel price data and
-                  traffic conditions to identify t he most cost-effective
-                  terminals for your fleet.
+                  Our TMS system offers robust IoT integration, enabling
+                  seamless communication with Liquid Controls' LCR-II electronic
+                  registers and wireless printers.
                 </p>
                 <p>
-                  By optimizing your fuel purchasing strategy, you can reduce
-                  fuel expenses and increase your bottom line. Experience the
-                  power of data-driven decision-making with myFuel
+                  This connectivity facilitates real-time data exchange and
+                  precise control over fuel dispensing operations. With
+                  Bring-Your-Own-Device (BYOD) support, users can access and
+                  manage the system from any device, enhancing operational
+                  flexibility and efficiency.
                 </p>
               </div>
               <button
@@ -213,92 +198,7 @@ const Platform = () => {
             </div>
           </div>
           <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center order-md-1">
-            <img className="p-1 w-100" src={bestBuyModule} alt="MyFuelAi" />
-          </div>
-        </div>
-      </div>
-
-      {/* InventoryMonitoringMoule */}
-      <div className="col-12 my-4">
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-6 d-flex justify-content-center ">
-            <div className="d-flex flex-column align-items-center  align-items-md-start gap-3 p-2 ">
-              <button
-                type="button"
-                className="sm-custom-btn btn-default-text-color custom-btn-border-color"
-              >
-                TRACK FUEL
-              </button>
-              <div className="app-detail-container">
-                <h1>Inventory Monitoring Module</h1>
-                <p>
-                  Gain complete visibility into your fuel inventory with
-                  myFuel's robust monitoring module. Our system meticulously
-                  tracks fuel flow in and out of your trucks, bulk plants, and
-                  internal tanks, ensuring accountability for every drop.
-                </p>
-                <p>
-                  By streamlining your inventory management, you can prevent
-                  losses due to theft, spillage, or human error. Trust myFuel to
-                  safeguard your fuel assets and optimize your operations.
-                </p>
-              </div>
-              <button
-                type="button"
-                className="col-12 col-md-4 custom-btn border border-dark bg-transparent"
-              >
-                Start for free
-              </button>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center ">
-            <img
-              className="p-1 w-100"
-              src={inventoryMonitorModule}
-              alt="MyFuelAi"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* priceLetters */}
-      <div className="col-12 my-4">
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-6 d-flex justify-content-center order-md-2">
-            <div className="d-flex flex-column align-items-center  align-items-md-start gap-3 p-2 ">
-              <button
-                type="button"
-                className="sm-custom-btn btn-default-text-color custom-btn-border-color"
-              >
-                OPTIMIZE PRICING
-              </button>
-              <div className="app-detail-container">
-                <h1>Price Letters</h1>
-                <p>
-                  The Price Letters module streamlines pricing management by
-                  allowing you to upload or connect your pricing files directly
-                  into the MyFuel system. Easily configure rates and set up
-                  pricing strategies, enabling the system to send targeted
-                  marketing emails and promotional blasts to potential
-                  customers.
-                </p>
-                <p>
-                  Leveraging past profit data, the module helps you define
-                  optimal rates and provides intelligent suggestions to simplify
-                  decision-making. This data-driven approach enhances
-                  profitability and strengthens customer engagement.
-                </p>
-              </div>
-              <button
-                type="button"
-                className="col-12 col-md-4 custom-btn border border-dark bg-transparent"
-              >
-                Start for free
-              </button>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center order-md-1">
-            <img className="p-1 w-100" src={priceLetter} alt="MyFuelAi" />
+            <img className="p-1 w-100" src={IotIntegration} alt="MyFuelAi" />
           </div>
         </div>
       </div>
@@ -528,8 +428,24 @@ const Platform = () => {
           </div>
         </div>
       </div>
+
+      {/* Try-Demo-Section */}
+      <div className=" rounded myfuel-default-bg-color">
+        <div className="d-flex flex-column justify-content-center align-items-center p-3 my-5 mx-5">
+          <h1 className="text-white text-center heavy-title">
+            Ready to Optimize Your Fuel Logistics?
+          </h1>
+          <p className="fw-normal fs-7 text-white text-center">
+            Get started with MyFuel.ai and experience seamless fuel logistics with
+            real-time tracking and AI-driven optimization
+          </p>
+          <button type="button" className="custom-btn btn-default-text-color custom-btn-border-color bg-white">
+            Try for Free
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Platform;
+export default AppRoute;
