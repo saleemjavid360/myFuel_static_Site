@@ -28,9 +28,9 @@ const generalConditions=[
 const TermsAndConditions = () => {
   return (
     <div className="col-11 d-flex flex-column home-desc-container p-0 gap-3 bg-light">
-      <div className="col-12 d-flex flex-column flex-md-row mt-3 p-2">
+      <div className="col-12 d-flex flex-column mt-3 p-2">
         <h1 className="main-title">Terms & Conditions</h1>
-        <p className="text-dark">Last updated: Dec 23rd, 2024</p>
+        <p className="text-dark mx-2">Last updated: Dec 23rd, 2024</p>
       </div>
       <div className="col-12 p-3 bg-white py-5">
         {/*  */}

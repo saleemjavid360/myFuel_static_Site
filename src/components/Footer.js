@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="col-12 d-flex flex-column align-items-center">
       <footer className="col-11 py-5 p-1 px-0 pb-0">
-        <div className="d-flex flex-row flex-sm-row p-0 flex-wrap">
+        <div className="d-flex p-0 flex-wrap">
           <div className='col-12 col-sm-3 col-md-5 mb-4 col-md-2'>
             <img
               src={myFuelLogoDesktop}
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-4 col-sm-3 col-md-2 mb-3">
+          <div className="col-12 col-sm-6 col-md-2 mb-3 ">
             <h5 className='text-muted fs-6 mb-2'>Company</h5>
             <ul className="nav flex-column gap-2">
               <li className="nav-item mb-2 fs-7">
@@ -66,7 +66,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-4 col-sm-3 col-md-2 mb-3 ">
+          <div className="col-12 col-sm-6 col-md-2 mb-3 ">
             <h5 className='text-muted fs-6'>Social networks</h5>
             <ul className="col-12 nav flex-column gap-2">
               <li className="d-flex nav-item mb-2 ">
@@ -96,10 +96,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-4 col-sm-3 col-md-2 mb-3 ">
+          <div className="col-12 col-sm-6 col-md-2 mb-3 ">
             <h5 className='text-muted mb-3 fs-6 mx-md-2'>Contact Us</h5>
             <ul className="col-12 nav flex-column">
-              <li className="d-flex nav-item mb-2  gap-2">
+              <li className="d-flex nav-item mb-2  gap-2 ">
                 <svg className='mar-l' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clipPath="url(#clip0_11865_21863)">
                     <path d="M12 13.2715C13.6569 13.2715 15 11.9283 15 10.2715C15 8.61463 13.6569 7.27148 12 7.27148C10.3431 7.27148 9 8.61463 9 10.2715C9 11.9283 10.3431 13.2715 12 13.2715Z" stroke="#6245D8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
