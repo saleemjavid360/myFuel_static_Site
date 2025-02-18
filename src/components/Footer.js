@@ -30,43 +30,48 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-12 col-sm-6 col-md-2 mb-3 ">
+          <div className="col-12 col-sm-3 col-md-2 mb-3">
             <h5 className='text-muted fs-6 mb-2'>Company</h5>
             <ul className="nav flex-column gap-2">
               <li className="nav-item mb-2 fs-7">
-                <a href="#" className="nav-link p-0 text-dark mx-1">
+                <a href="/solutions" className="nav-link p-0 text-dark mx-1">
                   Solutions
                 </a>
               </li>
               <li className="nav-item mb-2 fs-7">
-                <a href="#" className="nav-link p-0 text-dark mx-1">
+                <a href="/app" className="nav-link p-0 text-dark mx-1">
                   App
                 </a>
               </li>
               <li className="nav-item mb-2 fs-7">
-                <a href="#" className="nav-link p-0 text-dark mx-1">
+                <a href="/platform" className="nav-link p-0 text-dark mx-1">
                   Platform
                 </a>
               </li>
               <li className="nav-item mb-2 fs-7">
-                <a href="#" className="nav-link p-0 text-dark mx-1">
+                <a href="/aboutus" className="nav-link p-0 text-dark mx-1">
                   About Us
                 </a>
               </li>
               <li className="nav-item mb-2 fs-7">
-                <a href="#" className="nav-link p-0 text-dark mx-1">
+                <a href="/pricing" className="nav-link p-0 text-dark mx-1">
                   Pricing
                 </a>
               </li>
               <li className="nav-item mb-2 fs-7">
-                <a href="#" className="nav-link p-0 text-dark mx-1">
+                <a href="/contactus" className="nav-link p-0 text-dark mx-1">
                   Contact Us
+                </a>
+              </li>
+              <li className="nav-item mb-2 fs-7">
+                <a href="/faq" className="nav-link p-0 text-dark mx-1">
+                  Faq
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="col-12 col-sm-6 col-md-2 mb-3 ">
+          <div className="col-12 col-sm-3 col-md-2 mb-3">
             <h5 className='text-muted fs-6'>Social networks</h5>
             <ul className="col-12 nav flex-column gap-2">
               <li className="d-flex nav-item mb-2 ">
@@ -96,7 +101,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-12 col-sm-6 col-md-2 mb-3 ">
+          <div className="col-12 col-sm-3 col-md-2 mb-3">
             <h5 className='text-muted mb-3 fs-6 mx-md-2'>Contact Us</h5>
             <ul className="col-12 nav flex-column">
               <li className="d-flex nav-item mb-2  gap-2 ">

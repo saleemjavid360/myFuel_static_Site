@@ -4,7 +4,7 @@ import notFound from "../../assets/images/404.png";
 
 const NotFound = () => {
     return (
-        <div className='vh-50 d-flex flex-column justify-content-center w-100'>
+        <div className='vh-50 d-flex flex-column justify-content-center w-100 py-4'>
             <div className='col-12 d-flex flex-column align-items-center gap-3 my-4 my-md-5'>
                 <img
                     className=""
@@ -17,9 +17,9 @@ const NotFound = () => {
                 <Link to="/">
                     <button
                         type="button"
-                        className="custom-btn border border-secondary"
+                        className="custom-btn border border-secondary bg-transparent"
                     >
-                        back to Home
+                        Back to Home
                     </button>
                 </Link>
 
