@@ -5,13 +5,13 @@ import Layout from "./components/Layout.js";
 
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const AboutUs = lazy(() => import("./pages/aboutUs/AboutUs"));
-const Platform = lazy(() => import("./pages/platform/Platform.jsx"));
+const Platform = lazy(() => import("./pages/platform/Platform.js"));
 const NotFound = lazy(() => import("./pages/notFound/NotFound.js")); 
-const AppRoute = lazy(() => import("./pages/appRoute/AppRoute.jsx")); 
-const ContactUs = lazy(() => import("./pages/contactUs/ContactUs.jsx")); 
-const TermsAndConditions = lazy(() => import("./pages/termsAndConditions/TermsAndConditions.jsx")); 
-const PrivacyPolicy = lazy(() => import("./pages/privacyPolicy/PrivacyPolicy.jsx")); 
-const Faq = lazy(() => import("./pages/faq/Faq.jsx")); 
+const AppRoute = lazy(() => import("./pages/appRoute/AppRoute.js")); 
+const ContactUs = lazy(() => import("./pages/contactUs/ContactUs.js")); 
+const TermsAndConditions = lazy(() => import("./pages/termsAndConditions/TermsAndConditions.js")); 
+const PrivacyPolicy = lazy(() => import("./pages/privacyPolicy/PrivacyPolicy.js")); 
+const Faq = lazy(() => import("./pages/faq/Faq.js")); 
 
 const SuspenseWrapper = ({ children }) => {
   return (
