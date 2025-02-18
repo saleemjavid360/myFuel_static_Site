@@ -46,6 +46,12 @@ const Navbar = () => {
       icon: null,
       navigateTo:"/contactus",
     },
+    {
+      id: 7,
+      label: "Faq",
+      icon: null,
+      navigateTo:"/faq",
+    },
   ];
 
   return (
